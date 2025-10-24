@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#6366f1" />
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Modern FullStack Template v2 - Build scalable web applications with React, Node.js, Express and PostgreSQL. Complete authentication, responsive design, and production-ready setup." />
+    <meta name="keywords" content="fullstack template, react, nodejs, express, postgresql, web development, modern ui, authentication, dashboard" />
+    <meta name="author" content="bawfng04" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://your-domain.com/" />
+    <meta property="og:title" content="FullStack Template v2 - Modern Web Development" />
+    <meta property="og:description" content="Complete fullstack solution with React, Node.js, Express and PostgreSQL. Authentication, responsive design, and production-ready setup included." />
+    <meta property="og:image" content="%PUBLIC_URL%/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://your-domain.com/" />
+    <meta property="twitter:title" content="FullStack Template v2 - Modern Web Development" />
+    <meta property="twitter:description" content="Complete fullstack solution with React, Node.js, Express and PostgreSQL. Authentication, responsive design, and production-ready setup included." />
+    <meta property="twitter:image" content="%PUBLIC_URL%/twitter-image.png" />
+    <meta property="twitter:creator" content="@bawfng04" />
+
+    <!-- Apple Touch Icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="%PUBLIC_URL%/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="%PUBLIC_URL%/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="%PUBLIC_URL%/favicon-16x16.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link rel="mask-icon" href="%PUBLIC_URL%/safari-pinned-tab.svg" color="#6366f1" />
+    <meta name="msapplication-TileColor" content="#6366f1" />
+
+    <!-- Preconnect to external domains for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- DNS Prefetch for better performance -->
+    <link rel="dns-prefetch" href="//api.your-domain.com" />
+
+    <!-- Security Headers -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta http-equiv="X-Frame-Options" content="DENY" />
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block" />
+    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
+
+    <!-- Progressive Web App -->
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="FullStack v2" />
+
+    <!-- Performance Hints -->
+    <link rel="preload" href="%PUBLIC_URL%/fonts/inter-var.woff2" as="font" type="font/woff2" crossorigin />
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "FullStack Template v2",
+        "description": "Modern fullstack web application template with React, Node.js, Express and PostgreSQL",
+        "url": "https://your-domain.com",
+        "applicationCategory": "DeveloperApplication",
+        "operatingSystem": "Web Browser",
+        "author": {
+          "@type": "Person",
+          "name": "bawfng04",
+          "url": "https://github.com/bawfng04"
+        },
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        }
+      }
+    </script>
+
+    <title>FullStack Template v2 - Modern Web Development Solution</title>
+  </head>
+
+  <body>
+    <!-- No Script Fallback -->
+    <noscript>
+      <div style="
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      ">
+        <div style="
+          background: white;
+          padding: 2rem;
+          border-radius: 12px;
+          box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+          text-align: center;
+          max-width: 400px;
+          margin: 1rem;
+        ">
+          <h2 style="color: #1f2937; margin: 0 0 1rem 0; font-size: 1.5rem;">
+            🚀 JavaScript Required
+          </h2>
+          <p style="color: #6b7280; margin: 0 0 1.5rem 0; line-height: 1.6;">
+            This modern web application is built with React and requires JavaScript to function properly.
+          </p>
+          <p style="color: #374151; margin: 0; font-weight: 500;">
+            Please enable JavaScript in your browser settings and refresh the page.
+          </p>
+        </div>
+      </div>
+    </noscript>
+
+    <!-- Premium Loading Screen -->
+    <div id="loading-screen" class="loading-container">
+      <!-- Animated Background -->
+      <div class="loading-bg">
+        <div class="bg-particle" style="--delay: 0s; --x: 10%; --y: 20%;"></div>
+        <div class="bg-particle" style="--delay: 1s; --x: 80%; --y: 30%;"></div>
+        <div class="bg-particle" style="--delay: 2s; --x: 20%; --y: 70%;"></div>
+        <div class="bg-particle" style="--delay: 0.5s; --x: 70%; --y: 80%;"></div>
+        <div class="bg-particle" style="--delay: 1.5s; --x: 40%; --y: 10%;"></div>
+        <div class="bg-particle" style="--delay: 2.5s; --x: 90%; --y: 60%;"></div>
+      </div>
+
+      <!-- Main Loading Content -->
+      <div class="loading-content">
+        <!-- Logo/Brand -->
+        <div class="brand-container">
+          <div class="brand-icon">
+            <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
+              <rect width="60" height="60" rx="12" fill="url(#gradient1)"/>
+              <path d="M15 30h30M30 15v30M20 20l20 20M40 20L20 40" stroke="white" stroke-width="2" stroke-linecap="round"/>
+              <defs>
+                <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" style="stop-color:#6366f1"/>
+                  <stop offset="100%" style="stop-color:#8b5cf6"/>
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+          <h1 class="brand-title">FullStack v2</h1>
+        </div>
+
+        <!-- Advanced Spinner -->
+        <div class="spinner-container">
+          <div class="spinner-outer">
+            <div class="spinner-inner">
+              <div class="spinner-core"></div>
+            </div>
+          </div>
+          <div class="spinner-dots">
+            <div class="dot" style="--i: 0;"></div>
+            <div class="dot" style="--i: 1;"></div>
+            <div class="dot" style="--i: 2;"></div>
+            <div class="dot" style="--i: 3;"></div>
+            <div class="dot" style="--i: 4;"></div>
+            <div class="dot" style="--i: 5;"></div>
+          </div>
+        </div>
+
+        <!-- Loading Text with Typewriter Effect -->
+        <div class="loading-text">
+          <span class="typewriter">Loading application...</span>
+        </div>
+
+        <!-- Progress Bar -->
+        <div class="progress-container">
+          <div class="progress-bar">
+            <div class="progress-fill"></div>
+          </div>
+          <div class="progress-percentage">0%</div>
+        </div>
+
+        <!-- Tech Stack Icons -->
+        <div class="tech-icons">
+          <div class="tech-icon" style="--delay: 0.2s;">1</div>
+          <div class="tech-icon" style="--delay: 0.4s;">2</div>
+          <div class="tech-icon" style="--delay: 0.6s;">3</div>
+          <div class="tech-icon" style="--delay: 0.8s;">4</div>
+          <div class="tech-icon" style="--delay: 1.0s;">5</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Advanced CSS Styles -->
+    <style>
+      /* Loading Container */
+      .loading-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(135deg,
+          #667eea 0%,
+          #764ba2 25%,
+          #6366f1 50%,
+          #8b5cf6 75%,
+          #ec4899 100%);
+        background-size: 400% 400%;
+        animation: gradientShift 8s ease infinite;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 9998;
+        transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        overflow: hidden;
+      }
+
+      /* Animated Background Particles */
+      .loading-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+      }
+
+      .bg-particle {
+        position: absolute;
+        width: 4px;
+        height: 4px;
+        background: rgba(255, 255, 255, 0.6);
+        border-radius: 50%;
+        left: var(--x);
+        top: var(--y);
+        animation: float 6s ease-in-out infinite var(--delay);
+      }
+
+      .bg-particle::before {
+        content: '';
+        position: absolute;
+        width: 2px;
+        height: 2px;
+        background: rgba(255, 255, 255, 0.8);
+        border-radius: 50%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        animation: pulse 2s ease-in-out infinite;
+      }
+
+      /* Main Loading Content */
+      .loading-content {
+        text-align: center;
+        color: white;
+        position: relative;
+        z-index: 2;
+        animation: fadeInUp 1s ease-out;
+      }
+
+      /* Brand Section */
+      .brand-container {
+        margin-bottom: 3rem;
+        animation: brandPulse 3s ease-in-out infinite;
+      }
+
+      .brand-icon {
+        display: inline-block;
+        margin-bottom: 1rem;
+        animation: iconRotate 10s linear infinite;
+        filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.3));
+      }
+
+      .brand-title {
+        font-family: 'Inter', sans-serif;
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin: 0;
+        background: linear-gradient(45deg, #ffffff, #f1f5f9, #ffffff);
+        background-size: 200% 200%;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: textShimmer 3s ease-in-out infinite;
+        text-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      }
+
+      /* Advanced Spinner */
+      .spinner-container {
+        position: relative;
+        margin: 2rem 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .spinner-outer {
+        width: 100px;
+        height: 100px;
+        border: 3px solid rgba(255, 255, 255, 0.1);
+        border-radius: 50%;
+        position: relative;
+        animation: spinSlow 4s linear infinite;
+      }
+
+      .spinner-inner {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        width: 76px;
+        height: 76px;
+        border: 3px solid rgba(255, 255, 255, 0.3);
+        border-top-color: #ffffff;
+        border-radius: 50%;
+        animation: spinFast 1s linear infinite;
+      }
+
+      .spinner-core {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 20px;
+        height: 20px;
+        background: radial-gradient(circle, #ffffff, #e2e8f0);
+        border-radius: 50%;
+        animation: corePulse 2s ease-in-out infinite;
+      }
+
+      .spinner-dots {
+        position: absolute;
+        width: 120px;
+        height: 120px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .dot {
+        position: absolute;
+        width: 8px;
+        height: 8px;
+        background: #ffffff;
+        border-radius: 50%;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        transform-origin: 0 60px;
+        animation: dotRotate 3s ease-in-out infinite;
+        animation-delay: calc(var(--i) * 0.5s);
+      }
+
+      /* Loading Text */
+      .loading-text {
+        margin: 2rem 0;
+        font-family: 'Inter', sans-serif;
+        font-size: 1.2rem;
+        font-weight: 400;
+        opacity: 0.9;
+      }
+
+      .typewriter {
+        display: inline-block;
+        border-right: 2px solid #ffffff;
+        animation: typewriter 4s steps(40) infinite, blink 1s infinite;
+        white-space: nowrap;
+        overflow: hidden;
+        max-width: 100%;
+      }
+
+      /* Progress Bar */
+      .progress-container {
+        margin: 2rem 0;
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .progress-bar {
+        width: 100%;
+        height: 6px;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 10px;
+        overflow: hidden;
+        position: relative;
+        backdrop-filter: blur(10px);
+      }
+
+      .progress-fill {
+        height: 100%;
+        background: linear-gradient(90deg, #ffffff, #f1f5f9, #ffffff);
+        background-size: 200% 100%;
+        border-radius: 10px;
+        width: 0%;
+        animation: progressFill 3s ease-in-out infinite, progressShimmer 2s ease-in-out infinite;
+        position: relative;
+      }
+
+      .progress-fill::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+        animation: progressGlow 2s ease-in-out infinite;
+      }
+
+      .progress-percentage {
+        text-align: center;
+        margin-top: 0.5rem;
+        font-size: 0.9rem;
+        opacity: 0.8;
+        animation: percentageUpdate 3s ease-in-out infinite;
+      }
+
+      /* Tech Stack Icons */
+      .tech-icons {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        margin-top: 2rem;
+      }
+
+      .tech-icon {
+        font-size: 1.5rem;
+        opacity: 0;
+        animation: techIconPop 1s ease-out forwards;
+        animation-delay: var(--delay);
+        transform: scale(0);
+        transition: transform 0.3s ease;
+      }
+
+      .tech-icon:hover {
+        transform: scale(1.2);
+      }
+
+      /* Keyframe Animations */
+      @keyframes gradientShift {
+        0%, 100% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+      }
+
+      @keyframes float {
+        0%, 100% { transform: translateY(0) rotate(0deg); }
+        33% { transform: translateY(-20px) rotate(120deg); }
+        66% { transform: translateY(10px) rotate(240deg); }
+      }
+
+      @keyframes pulse {
+        0%, 100% { opacity: 0.6; transform: translate(-50%, -50%) scale(1); }
+        50% { opacity: 1; transform: translate(-50%, -50%) scale(1.5); }
+      }
+
+      @keyframes fadeInUp {
+        from { opacity: 0; transform: translateY(30px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+
+      @keyframes brandPulse {
+        0%, 100% { transform: scale(1); }
+        50% { transform: scale(1.05); }
+      }
+
+      @keyframes iconRotate {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+      }
+
+      @keyframes textShimmer {
+        0%, 100% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+      }
+
+      @keyframes spinSlow {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+      }
+
+      @keyframes spinFast {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(-360deg); }
+      }
+
+      @keyframes corePulse {
+        0%, 100% { transform: translate(-50%, -50%) scale(1); opacity: 1; }
+        50% { transform: translate(-50%, -50%) scale(1.3); opacity: 0.7; }
+      }
+
+      @keyframes dotRotate {
+        0% { transform: translateX(-50%) rotate(0deg); opacity: 0; }
+        50% { opacity: 1; }
+        100% { transform: translateX(-50%) rotate(360deg); opacity: 0; }
+      }
+
+      @keyframes typewriter {
+        0%, 90%, 100% { width: 0; }
+        30%, 60% { width: 100%; }
+      }
+
+      @keyframes blink {
+        0%, 50% { border-color: transparent; }
+        51%, 100% { border-color: #ffffff; }
+      }
+
+      @keyframes progressFill {
+        0% { width: 0%; }
+        100% { width: 100%; }
+      }
+
+      @keyframes progressShimmer {
+        0%, 100% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+      }
+
+      @keyframes progressGlow {
+        0%, 100% { transform: translateX(-100%); }
+        50% { transform: translateX(100%); }
+      }
+
+      @keyframes percentageUpdate {
+        0% { opacity: 0.5; }
+        50% { opacity: 1; }
+        100% { opacity: 0.5; }
+      }
+
+      @keyframes techIconPop {
+        0% { opacity: 0; transform: scale(0) rotate(-180deg); }
+        50% { transform: scale(1.2) rotate(-90deg); }
+        100% { opacity: 1; transform: scale(1) rotate(0deg); }
+      }
+
+      /* Responsive Design */
+      @media (max-width: 768px) {
+        .brand-title { font-size: 2rem; }
+        .loading-text { font-size: 1rem; }
+        .progress-container { width: 250px; }
+        .tech-icons { gap: 0.5rem; }
+        .tech-icon { font-size: 1.2rem; }
+      }
+    </style>
+
+    <!-- React App Root -->
+    <div id="root"></div>
+    <!-- Enhanced Loading Script -->
+    <script>
+      let progress = 0;
+      const progressFill = document.querySelector('.progress-fill');
+      const progressPercentage = document.querySelector('.progress-percentage');
+
+      if (progressFill) {
+        progressFill.style.animation = 'none';
+        progressFill.style.transition = 'width 0.3s ease-out';
+      }
+
+      const progressInterval = setInterval(() => {
+        progress += Math.random() * 50 + 25;
+        if (progress > 100) progress = 100;
+
+        if (progressFill) progressFill.style.width = progress + '%';
+        if (progressPercentage) progressPercentage.textContent = Math.round(progress) + '%';
+
+        if (progress >= 100) {
+          clearInterval(progressInterval);
+          if (progressFill) progressFill.style.width = '100%';
+          if (progressPercentage) progressPercentage.textContent = '100%';
+
+          setTimeout(() => {
+            const loadingScreen = document.getElementById('loading-screen');
+            if (loadingScreen) {
+              loadingScreen.style.transform = 'scale(1.1)';
+              loadingScreen.style.opacity = '0';
+              setTimeout(() => {
+                loadingScreen.style.display = 'none';
+              }, 600);
+            }
+          }, 400);
+        }
+      }, 40);
+
+      window.addEventListener('DOMContentLoaded', function() {
+        setTimeout(() => {
+          clearInterval(progressInterval);
+          progress = 100;
+
+          if (progressFill) {
+            progressFill.style.width = '100%';
+            progressFill.style.transition = 'width 0.5s ease-out';
+          }
+          if (progressPercentage) progressPercentage.textContent = '100%';
+
+          setTimeout(() => {
+            const loadingScreen = document.getElementById('loading-screen');
+            if (loadingScreen) {
+              loadingScreen.style.transform = 'scale(1.1)';
+              loadingScreen.style.opacity = '0';
+              setTimeout(() => {
+                loadingScreen.style.display = 'none';
+              }, 600);
+            }
+          }, 600);
+        }, 200);
+      });
+    </script>
+
+    <!-- Analytics (uncomment when ready to use) -->
+    <!--
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
+    -->
+
+    <!-- Service Worker Registration -->
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+          navigator.serviceWorker.register('%PUBLIC_URL%/sw.js')
+            .then(function(registration) {
+              console.log('SW registered: ', registration);
+            })
+            .catch(function(registrationError) {
+              console.log('SW registration failed: ', registrationError);
+            });
+        });
+      }
+    </script>
+
+    <!--
+      This website is built with Fullstack template v2, provided by bawfng04: https://github.com/bawfng04
+    -->
+  </body>
+</html>
